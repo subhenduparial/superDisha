@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin:0px auto !important
+}
+.ml-auto, .mx-auto {
+    margin-left: auto !important;
+}
+.mr-auto, .mx-auto {
+    margin-right: auto !important;
+}
+.input-group-prepend {
+    margin-right: -1px;
+    display: flex;
+  }
+  .input-group > .input-group-prepend > .input-group-text {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  

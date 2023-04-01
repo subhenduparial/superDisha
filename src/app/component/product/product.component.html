@@ -1,0 +1,41 @@
+<div class="main">
+    <div class="section text-center">
+        <div class="" id="menu-dropdown">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg bg-primary">
+                        <div class="container">
+                          
+<!-- 
+
+
+
+Ayurveda
+Health Devices
+Home Essentials -->
+                            
+                            <div class="collapse navbar-collapse" id="navbar-menu">
+                              <div *ngFor="let data of demoJson; let i=index">
+                              <button mat-button [matMenuTriggerFor]="animals" >{{data.category}}</button>                             
+
+                              <mat-menu #animals="matMenu">
+                                <div *ngFor="let category of data.category_details">
+                                  <button mat-menu-item>{{category}}</button>
+                                </div>
+                              </mat-menu>
+                            </div>
+
+                              <!-- <button mat-button [matMenuTriggerFor]="animals2">Health & Nutrition</button>
+                              <mat-menu #animals2="matMenu">
+                                <button mat-menu-item>Vertebrates3</button>
+                              </mat-menu> -->
+
+                              
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
