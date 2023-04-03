@@ -12,6 +12,7 @@ export class ProductComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log("This is test purpose");
     // this.demoJson={
     //   "Health Condition":["Liver Care","Diabetic","Pain Relief"],
     //   "Baby Care":{
